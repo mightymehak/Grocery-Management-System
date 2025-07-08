@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocify - Login / Signup</title>
+  <link rel="stylesheet" href="ac.css">
+</head>
+<body>
+
+<div class="main-container">
+
+  <div class="left-section">
+    <img src="logo.png" alt="Grocify Logo" class="logo">
+  </div>
+
+  <div class="right-section">
+    <div class="auth-container">
+
+      <div id="auth-forms"  >
+        <div class="auth-buttons">
+          <button id="login-btn" class="active">Login</button>
+        </div>
+
+        <form id="login-form" method="POST" action="/admin/login" class="auth-form">
+          <h2>Login</h2>
+          <input type="number" placeholder="Admin ID" name="id" required>
+          <input type="password" placeholder="Password" name="password" required>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="aj.js"></script>
+
+</body>
+</html>

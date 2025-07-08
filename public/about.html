@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- About Us Page Styles --- */
+        .about-us-container {
+            padding: 60px 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        .about-us-content {
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-us-content h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .about-us-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+        .about-us-mission {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            text-align: center;
+
+        }
+
+        .about-us-mission h3{
+            font-size: 24px;
+            color:#333;
+            margin-bottom: 10px;
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        .about-us-mission ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #666;
+            animation: slideInLeft 1s ease-in-out 0.2s;
+        }
+
+        .about-us-mission li{
+            margin-bottom: 8px;
+        }
+
+        .about-us-values h3{
+            font-size: 24px;
+            color:#333;
+            margin-bottom: 10px;
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        .about-us-values{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .about-us-values ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #666;
+            animation: slideInRight 1s ease-in-out 0.2s;
+        }
+        .about-us-values li{
+            margin-bottom: 8px;
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* --- Responsive adjustments --- */
+        @media (max-width: 768px) {
+            .about-us-container {
+                padding: 40px 5%;
+            }
+            .about-us-content h2 {
+                font-size: 30px;
+            }
+            .about-us-content p {
+                font-size: 16px;
+            }
+            .about-us-mission ul, .about-us-values ul{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt="Grocify Logo"></div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us-container">
+            <div class="about-us-content">
+                <h2>About Us</h2>
+                <p>Welcome to Grocify, your one-stop destination for fresh and organic groceries. We are passionate about providing high-quality products and exceptional service to our customers. Our mission is to make healthy living accessible and convenient for everyone.</p>
+            </div>
+            <div class="about-us-mission">
+                <h3>Our Mission</h3>
+                <ul>
+                    <li>To provide fresh, high-quality organic products.</li>
+                    <li>To support local farmers and sustainable agriculture.</li>
+                    <li>To make healthy living accessible to everyone.</li>
+                </ul>
+            </div>
+
+            <div class="about-us-values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Quality: We source only the best products.</li>
+                    <li>Integrity: We operate with honesty and transparency.</li>
+                    <li>Community: We support our local community and farmers.</li>
+                    <li>Sustainability: We are committed to environmentally friendly practices.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>Grocify <span class="icon">🛒</span></h2>
+                <p>Feel Free To Follow Us On Our Social Media Handlers. All The Links Are Given Below.</p>
+                <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +91-8797059910</a>
+                <a href="#"><i class="fas fa-phone"></i> +91-9334276761</a>
+                <a href="#"><i class="fas fa-envelope"></i> admin@Grocify.Com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Hyderabad, India - 500084</a>
+            </div>
+        
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For Latest Updates</p>
+                <form class="newsletter">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

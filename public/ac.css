@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-container {
+    display: flex;
+    width: 85%;
+    max-width: 1200px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  }
+  
+  
+  .left-section {
+    background: linear-gradient(135deg, #84cc16, #4ade80); /* Vibrant green gradient */
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .brand-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
+  .right-section {
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .auth-container {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .auth-buttons button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    background: #f0fdf4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #065f46;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .auth-buttons button.active {
+    background: #4ade80;
+    color: white;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .submit-btn {
+    margin-top: 15px;
+    padding: 12px;
+    background: #22c55e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #16a34a;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      height: auto;
+    }
+  
+    .left-section {
+      padding: 20px;
+    }
+  }
+  #user-type-selection {
+    text-align: center;
+  }
+  
+  .user-type-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #f0fdf4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #065f46;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .user-type-btn:hover {
+    background: #4ade80;
+    color: white;
+  }
+  

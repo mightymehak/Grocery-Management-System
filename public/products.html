@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocify - Products</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="logo.png" alt="Grocify Logo" class="logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="icons">
+    <a href="cart.html">  <i class="fas fa-shopping-cart"></i></a>
+  </div>
+</nav>
+
+<div class="main-container">
+  <aside class="filter-section">
+    <h2>Filter by Category</h2>
+
+    <div class="filter-option">
+      <input type="checkbox" id="fruits-vegetables" value="Fruits & Vegetables" onchange="applyFilters()">
+      <label for="fruits-vegetables">Fruits & Vegetables</label>
+    </div>
+
+    <div class="filter-option">
+      <input type="checkbox" id="dairy" value="Dairy" onchange="applyFilters()">
+      <label for="dairy">Dairy</label>
+    </div>
+
+    <div class="filter-option">
+      <input type="checkbox" id="snacks" value="Snacks" onchange="applyFilters()">
+      <label for="snacks">Snacks</label>
+    </div>
+
+    <div class="filter-option">
+      <input type="checkbox" id="frozen" value="Frozen" onchange="applyFilters()">
+      <label for="frozen">Frozen</label>
+    </div>
+
+    <div class="filter-option">
+      <input type="checkbox" id="beverages" value="Beverages" onchange="applyFilters()">
+      <label for="beverages">Beverages</label>
+    </div>
+
+    <div class="filter-option">
+      <input type="checkbox" id="pulses" value="Pulses" onchange="applyFilters()">
+      <label for="pulses">Pulses</label>
+    </div>
+
+  </aside>
+
+  <section class="products-section" id="product-list">
+    <!-- Products will be dynamically inserted here -->
+  </section>
+</div>
+
+<script src="products.js"></script>
+</body>
+</html>

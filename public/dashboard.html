@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - GROCIFY</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">GROCIFY ADMIN</h1>
+            <div class="nav-buttons">
+                <button type="button" class="nav-btn active" data-page="stock">Stock Left</button>
+                <button type="button" class="nav-btn" data-page="billing">Billing</button>
+                <button type="button" class="nav-btn logout" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Stock Left Page -->
+        <section class="page" id="stock-page">
+            <h2>Stock Left</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity Left</th>
+                    </tr>
+                </thead>
+                <tbody id="stock-table-body">
+                    <!-- Stock items will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Billing Page -->
+        <section class="page" id="billing-page" style="display: none;">
+            <h2>Billing</h2>
+            <div class="billing-content">
+                
+                <!-- Product Selection -->
+                <div class="item-selection">
+                    <h3>Available Products</h3>
+                    <p class="subtitle">Select products to add to the customer's bill</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Price</th>
+                                <th>In Stock</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="billing-items">
+                            <!-- Available products will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Customer Bill -->
+                <div class="current-bill">
+                    <h3>Current Bill</h3>
+                    <p class="subtitle">Items in the customer's shopping cart</p>
+
+                    <div class="customer-name-container">
+                        <label for="customerName">Customer Name</label>
+                        <input type="text" name='name' id="customerName" placeholder="Enter customer name">
+                        
+                        <label for="customerNumber">Phone Number</label>
+                        <input type="tel" id="customerNumber" name="phone" placeholder="Enter customer phone number">
+                        
+                        <button id="submit-customer" class="btn-primary">Submit Customer</button>
+                    </div>
+                    
+
+                    <!-- Empty Cart Message -->
+                    <div id="empty-cart" class="empty-cart">
+                        <div class="cart-icon" role="img" aria-label="Empty cart">🛒</div>
+                        <p>No items in cart</p>
+                        <p class="add-hint">Add items from the product list</p>
+                    </div>
+
+                    <!-- Bill Table -->
+                    <table class="data-table" id="bill-table" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bill-items">
+                            <!-- Bill items will be populated here -->
+                        </tbody>
+                    </table>
+
+                    <!-- Bill Total -->
+                    <div class="bill-total" style="display: none;">
+                        <p>Total: Rs. <span id="bill-total-amount">0.00</span></p>
+                    </div>
+
+                    <button type="button" id="complete-bill" class="btn-primary" style="display: none;">Complete Order</button>
+                </div>
+            </div>
+        </section>
+
+       
+
+    <script src="adminscript.js">
+    </script>
+</body>
+</html>
